@@ -74,9 +74,12 @@
         <h2 data-i18n-html="services_title">Избери своята<br><em>процедура.</em></h2>
         <p class="section-intro" data-i18n="services_intro">Разгледай услугите по категории и цени. Избери това, от което имаш нужда, и изпрати заявка за удобен час.</p>
       </div>
+
+      <!-- Контейнеры для подгрузки прайс-листа через script.js -->
       <div class="main-sections" id="mainSections" aria-label="Основни раздели"></div>
       <div class="category-tabs" id="categoryTabs" aria-label="Подкатегории услуги"></div>
       <div class="service-list" id="serviceList" aria-live="polite"></div>
+
       <p class="price-footnote" data-i18n="price_footnote">Всички цени са в евро (€). Потвърждението на часа се извършва след връзка с екипа на студиото.</p>
     </section>
 
@@ -140,9 +143,11 @@
 
       <form id="bookingForm" class="booking-form" novalidate>
         <div class="form-title"><span>01 / BOOKING REQUEST</span><strong data-i18n="form_heading">Заяви посещение</strong></div>
+
+        <!-- Скрытая ловушка от спам-ботов (Honeypot) -->
         <div style="display:none !important;">
-    <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-  </div>
+          <label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+        </div>
 
         <div class="form-row">
           <label><span data-i18n="form_name">Име и фамилия</span>
@@ -237,6 +242,7 @@
     <span>© <span id="year"></span> AVEO BEAUTY STUDIO · SOFIA</span>
     <a href="#home" data-i18n="footer_top">Нагоре ↑</a>
   </footer>
+  
   <script src="script.js"></script>
 </body>
 </html>
